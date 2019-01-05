@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -7,12 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HijoComponent implements OnInit {
 
-
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
   }
 
 }
-

@@ -31,12 +31,10 @@ import {AreaDiezComponent} from './area-diez/area-diez.component';
 import {AreaDoceComponent} from './area-doce/area-doce.component';
 import {AreaTreceComponent} from './area-trece/area-trece.component';
 import {AreaDieciseisComponent} from './area-dieciseis/area-dieciseis.component';
-import {AreaCinco2Component} from './area-cinco2/area-cinco2.component';
 import {FormularioComponent} from './formulario/formulario.component';
-import {HijoComponent} from './hijo/hijo.component';
-import {PadreComponent} from './padre/padre.component';
 import {EstadisticasComponent} from './estadisticas/estadisticas.component';
 import {RecomendacionesComponent} from './recomendaciones/recomendaciones.component';
+import { AreaCinco2Component } from './area-cinco2/area-cinco2.component';
 
 @NgModule({
   declarations: [
@@ -61,12 +59,10 @@ import {RecomendacionesComponent} from './recomendaciones/recomendaciones.compon
     AreaDoceComponent,
     AreaTreceComponent,
     AreaDieciseisComponent,
-    AreaCinco2Component,
     FormularioComponent,
-    HijoComponent,
-    PadreComponent,
     EstadisticasComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    AreaCinco2Component
   ],
   imports: [
     BrowserModule,
