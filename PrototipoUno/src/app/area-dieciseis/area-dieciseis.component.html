@@ -118,7 +118,7 @@
       <h3>Cronómetro</h3>
     </div>
     <div class="sa-centrar" *ngIf="!mostrar_mensaje">
-        <h1>{{contador_segundos}}</h1>
+      <h1>{{contador_segundos}}</h1>
     </div>
 
     <div class="row" *ngIf="mostrar_mensaje">
@@ -297,23 +297,29 @@
 <div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
 <div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
 <div class="row" *ngIf="mostrar_ejercicio_en_papel">
-  <div class="sa-centrar">
-    <audio src="{{audio}}" controls autoplay >
-    </audio>
+  <div class="col-4">
+    <div class="row" *ngIf="mostrar_ejercicio_en_papel" >
+      <div class="col-5"><p></p></div>
+      <div class="col-3">
+        <div class="row" *ngIf="mostrar_cronometro_papel"><h5>Cronómetro</h5></div>
+        <div class="row sa-centrar" *ngIf="mostrar_cronometro_papel"><h1>{{contador_segundos_papel}}</h1></div>
+      </div>
+      <div class="col-2" *ngIf="mostrar_botones_cronometro">
+        <button style="background: cornflowerblue" (click)="cronometroPapel()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>
+      </div>
+      <div class="col-2" *ngIf="mostrar_alarma">
+        <audio src="{{alarma}}" autoplay></audio>
+      </div>
+    </div>
   </div>
-</div>
-<div class="row" *ngIf="mostrar_ejercicio_en_papel" >
-  <div class="col-6"><p></p></div>
-  <div class="col-1">
-    <div class="row" *ngIf="mostrar_cronometro_papel"><h5>Cronómetro</h5></div>
-    <div class="row sa-centrar" *ngIf="mostrar_cronometro_papel"><h1>{{contador_segundos_papel}}</h1></div>
+  <div class="col-1"><p></p></div>
+  <div class="col-7">
+    <div>
+      <audio src="{{audio}}" controls autoplay >
+      </audio>
+    </div>
   </div>
-  <div class="col-2" *ngIf="mostrar_botones_cronometro">
-    <button (click)="cronometroPapel()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>
-  </div>
-  <div class="col-2" *ngIf="mostrar_alarma">
-    <audio src="{{alarma}}" autoplay></audio>
-  </div>
+
 </div>
 <div class="row" *ngIf="mostrar_ejercicio_en_papel">
   <div class="col-4"><p></p></div>

@@ -7,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AreaDieciseisComponent implements OnInit {
   cabecera = 'imagenes/cabeceras/CabeceraArea16.png';
-  contador_segundos = 2;
+  contador_segundos = 60;
   contador_segundos_papel = 60;
   mostrar_alarma = false;
   imagen_cronometro = 'imagenes/area16/cronometro.png';
-  alarma = 'audio/area16/alarma.mp3';
+  alarma = 'audio/area16/alarma.mpeg';
   mostrar_mensaje = false;
   indicacion = 'Diagnostica atención y fatiga. Esta área se puede realizar tanto' +
     ' en la computadora como en el papel, queda a criterio del evaluador.';
