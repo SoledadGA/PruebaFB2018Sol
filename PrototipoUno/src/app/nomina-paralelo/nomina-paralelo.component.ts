@@ -58,7 +58,7 @@ export class NominaParaleloComponent implements OnInit {
   displayedColumns2: any[] = ['position', 'name'];
 
   irFormulario() {
-    location.href = '/#/ingresarDatos';
+    location.href = '/#/cambiarParalelo';
   }
 
   constructor() {
