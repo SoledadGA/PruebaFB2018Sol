@@ -22,6 +22,10 @@ import {AreaDieciseisComponent} from './area-dieciseis/area-dieciseis.component'
 import {FormularioComponent} from './formulario/formulario.component';
 import {EstadisticasComponent} from './estadisticas/estadisticas.component';
 import {RecomendacionesComponent} from './recomendaciones/recomendaciones.component';
+import {HijoComponent} from './hijo/hijo.component';
+import {AsignarParalelosComponent} from './asignar-paralelos/asignar-paralelos.component';
+import {CambioParaleloComponent} from './cambio-paralelo/cambio-paralelo.component';
+import {NominaParaleloComponent} from './nomina-paralelo/nomina-paralelo.component';
 
 export const RUTAS_APP: Routes = [
   {
@@ -115,6 +119,18 @@ export const RUTAS_APP: Routes = [
   {
     path: 'estadisticas',
     component: EstadisticasComponent,
+  },
+  {
+    path: 'asignarParalelo',
+    component: AsignarParalelosComponent,
+  },
+  {
+    path: 'nominaParalelo',
+    component: NominaParaleloComponent,
+  },
+  {
+    path: 'cambiarParalelo',
+    component: CambioParaleloComponent,
   },
   {
     path: '**',

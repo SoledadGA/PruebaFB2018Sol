@@ -1,9 +1,14 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {
   MatCheckboxModule,
   MatButtonModule,
   MatFormFieldModule,
+  MatMenuModule,
+  MatTableModule,
+  MatSortModule,
+  MatSelectModule
 } from '@angular/material';
 import {ChartModule} from 'primeng/chart';
 import {DragDropModule} from '@angular/cdk/drag-drop';
@@ -35,6 +40,10 @@ import {FormularioComponent} from './formulario/formulario.component';
 import {EstadisticasComponent} from './estadisticas/estadisticas.component';
 import {RecomendacionesComponent} from './recomendaciones/recomendaciones.component';
 import { AreaCinco2Component } from './area-cinco2/area-cinco2.component';
+import {HijoComponent} from './hijo/hijo.component';
+import { AsignarParalelosComponent } from './asignar-paralelos/asignar-paralelos.component';
+import { CambioParaleloComponent } from './cambio-paralelo/cambio-paralelo.component';
+import { NominaParaleloComponent } from './nomina-paralelo/nomina-paralelo.component';
 
 @NgModule({
   declarations: [
@@ -62,15 +71,24 @@ import { AreaCinco2Component } from './area-cinco2/area-cinco2.component';
     FormularioComponent,
     EstadisticasComponent,
     RecomendacionesComponent,
-    AreaCinco2Component
+    AreaCinco2Component,
+    HijoComponent,
+    AsignarParalelosComponent,
+    CambioParaleloComponent,
+    NominaParaleloComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatCheckboxModule,
     MatButtonModule,
     MatFormFieldModule,
     ChartModule,
     DragDropModule,
+    MatMenuModule,
+    MatTableModule,
+    MatSortModule,
+    MatSelectModule,
     RouterModule.forRoot(
       RUTAS_APP, {useHash: true}
     ),

@@ -68,11 +68,3 @@ p{
 table {
   width: 100%;
 }
-
-.example-first-header-row th {
-  border-bottom: none;
-}
-
-.example-second-header-row {
-  border-bottom: none;
-}
