@@ -117,6 +117,7 @@ export class AsignarParalelosComponent implements OnInit {
   }
 
   guardar() {
+    location.href = '/#/inicio';
   }
 
   constructor() {

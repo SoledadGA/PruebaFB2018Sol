@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-cambio-paralelo',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CambioParaleloComponent implements OnInit {
 
-  constructor() { }
+  nombre = 'Tania Soledad Gallardo Andrade';
+  paralelo;
+
+  guardar() {
+    location.href = '/#/nominaParalelo';
+    console.log('Nombre: ' + this.nombre);
+    console.log('Paralelo: ' + this.paralelo);
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

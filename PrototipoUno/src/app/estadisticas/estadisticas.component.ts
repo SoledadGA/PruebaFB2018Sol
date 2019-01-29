@@ -474,8 +474,8 @@ export class EstadisticasComponent implements OnInit {
         },
         {
           label: 'Re Test',
-          backgroundColor: '#7ff577',
-          borderColor: '#3de539',
+          backgroundColor: '#FA5882',
+          borderColor: '#FF0040',
           data: this.negativosGraficoRetest
         }
       ],
