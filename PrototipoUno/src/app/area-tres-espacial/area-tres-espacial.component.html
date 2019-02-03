@@ -3,7 +3,7 @@
     <img src="{{cabecera}}" style="height: auto;width: 100%" >
   </div>
 </div>
-<div class="row"><br></div>
+<div class="row" *ngIf="mostrarSilla"><br></div>
 
 <div class="row" *ngIf="mostrarSilla">
   <div class="col-1"></div>
@@ -97,8 +97,8 @@
     <h2>Resultado - {{titulo}}</h2>
   </div>
 </div>
-<div class="row"><br></div>
-<div class="row">
+<div class="row" *ngIf="!mostrarSilla"><br></div>
+<div class="row" *ngIf="!mostrarSilla">
   <div class="col-3"><p></p></div>
   <div class="col-4" *ngIf="!mostrarSilla">
     <h3>Preguntas</h3>

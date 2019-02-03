@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="row"><br></div>
+<div class="row" *ngIf="mostrarEjemplo"><br></div>
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"><p></p></div>
   <div class="col-10 sa-borde">
@@ -46,6 +46,7 @@
     </button>
   </div>
 </div>
+<div class="row" *ngIf="mostrarEjemplo"><br></div>
 
 <!--Preguntas><!-->
 <div class="row" *ngIf="mostrarPreguntas">
@@ -54,6 +55,7 @@
     <h3>{{parteTitulo}}</h3>
   </div>
 </div>
+
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
     <br>
