@@ -63,6 +63,7 @@ export class AreaOchoComponent implements OnInit {
         console.log(this.respuesta[this.valor]);
       } else {
         this.respuesta[this.valor] = 'Positivo';
+        this.mostrarAreaPositiva = true;
       }
       this.mostrarPreguntas = false;
       this.mostrarRespuesta = true;

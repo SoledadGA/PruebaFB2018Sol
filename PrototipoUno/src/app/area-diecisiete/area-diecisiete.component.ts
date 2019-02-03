@@ -42,6 +42,7 @@ export class AreaDiecisieteComponent implements OnInit {
 
   siguientePregunta(entrada: number) {
     this.mostrarDiagnostico = false;
+    this.mosatrar_alarma_uno = false;
     if (this.contador == 0){
       this.mosatrar_alarma_dos = true;
       this.contador = this.contador + 1;
