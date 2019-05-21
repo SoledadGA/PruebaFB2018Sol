@@ -61,6 +61,15 @@ export class FormularioComponent implements OnInit {
     'Se considera como área positiva',
     'Se considera como área debilitada',
     'Se considera como área positiva'];
+  calificacion2 = [
+    'debilitada',
+    'debilitada',
+    'debilitada',
+    'debilitada',
+    'debilitada',
+    'debilitada',
+    'debilitada',
+    'debilitada'];
   subtituloArea3 = [
     'Temporal:',
     'Espacial:'];

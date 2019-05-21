@@ -12,8 +12,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ngfor</find>
+      <find>char</find>
+      <find>js</find>
+      <find>proceso</find>
+      <find>con es</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/models/estudiante.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/package.json" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/angular.json" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.css" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/backend/index.js" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/services/estudiante.service.ts" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/formulario/formulario.component.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-ocho/area-ocho.component.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/inicio/inicio.component.html" />
+        <option value="$PROJECT_DIR$/Prototipo3/frontend/src/app/components/formulario/formulario.component.ts" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -21,14 +56,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Prototipo3/frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/Prototipo3/node_modules" />
+    <handled-path value="$PROJECT_DIR$/PrototipoUno/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Prototipo3/frontend/package.json" />
+      <path value="$PROJECT_DIR$/Prototipo3/package.json" />
+      <path value="$PROJECT_DIR$/PrototipoUno/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="373" />
-    <option name="y" value="30" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="723" />
+    <option name="height" value="755" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -36,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -46,20 +91,60 @@
             <path>
               <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
               <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
-              <item name="PrototipoUno" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebaFB2018Sol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebaFB2018Sol" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="formulario" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PrototipoUno" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/Prototipo3/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,6 +158,9 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="510a4bc9-d0d5-45bb-8f21-7629a204c434" name="Default" comment="" />
@@ -81,31 +169,645 @@
       <option name="presentableId" value="Default" />
       <updated>1546645047905</updated>
       <workItem from="1546645087070" duration="213000" />
+      <workItem from="1558224470089" duration="6210000" />
+      <workItem from="1558232318396" duration="935000" />
+      <workItem from="1558234028854" duration="360000" />
+      <workItem from="1558235920511" duration="1587000" />
+      <workItem from="1558280220894" duration="23624000" />
+      <workItem from="1558310127741" duration="4137000" />
+      <workItem from="1558377950987" duration="14019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213000" />
+    <option name="totallyTimeSpent" value="51085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960998" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30655226" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32921174" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4049459" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/property-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/property-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/property-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/class-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/class-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/class-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/constructor-checks.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/constructor-checks.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/constructor-checks.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/input-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/input-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/input-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/output-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/output-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/output-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/element-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/element-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/element-selectors.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/method-call-checks.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/method-call-checks.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/method-call-checks.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/index.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/index.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/index.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/css-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/css-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/css-selectors.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/attribute-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/attribute-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/cdk/schematics/ng-update/data/attribute-selectors.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/property-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/property-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/property-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/class-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/class-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/class-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/constructor-checks.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/constructor-checks.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/constructor-checks.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/input-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/input-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/input-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/output-names.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/output-names.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/output-names.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/element-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/element-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/element-selectors.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/method-call-checks.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/method-call-checks.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/method-call-checks.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/index.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/index.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/index.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/css-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/css-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/css-selectors.js.map" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/attribute-selectors.js" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/attribute-selectors.d.ts" />
+        <option value="$PROJECT_DIR$/PrototipoUno/node_modules/@angular/material/schematics/ng-update/data/attribute-selectors.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5760">
+          <caret line="360" column="16" lean-forward="true" selection-end-line="474" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2896">
+          <caret line="181" column="33" selection-start-line="181" selection-start-column="33" selection-end-line="181" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5984">
+          <caret line="374" column="27" lean-forward="true" selection-start-line="374" selection-start-column="27" selection-end-line="374" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5008">
+          <caret line="313" column="113" selection-start-line="313" selection-start-column="113" selection-end-line="313" selection-end-column="113" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5088">
+          <caret line="318" column="80" selection-start-line="318" selection-start-column="80" selection-end-line="318" selection-end-column="80" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5088">
+          <caret line="318" column="66" selection-start-line="318" selection-start-column="66" selection-end-line="318" selection-end-column="66" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5024">
+          <caret line="314" column="41" selection-start-line="314" selection-start-column="41" selection-end-line="314" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/backend/Controladores/estudiante.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4846" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/backend/Rutas/estudiante.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/backend/database.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/backend/Modelos/estudiante.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="128" column="48" lean-forward="true" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="146" column="59" lean-forward="true" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/models/estudiante.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4078">
+          <caret line="132" column="39" selection-start-line="132" selection-start-column="39" selection-end-line="132" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1709" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/node_modules/chart.js/dist/Chart.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/node_modules/chartjs-color/node_modules/color-convert/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/prueba/prueba.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototipoUno/src/app/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="449" column="5" lean-forward="true" selection-end-line="505" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototipoUno/src/app/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="10" lean-forward="true" selection-end-line="329" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/recomendaciones/recomendaciones.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/recomendaciones/recomendaciones.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/backend/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/services/estudiante.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-ocho/area-ocho.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrototipoUno/src/app/area-ocho/area-ocho.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-ocho/area-ocho.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#11;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#div#11;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/area-cuatro/area-cuatro.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/inicio/inicio.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/inicio/inicio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="232" column="31" lean-forward="true" selection-start-line="232" selection-start-column="6" selection-end-line="232" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="379" lean-forward="true" selection-start-line="379" selection-end-line="379" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+            <element signature="n#div#8;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#!!top" />
+            <element signature="n#div#2;n#div#8;n#!!top" />
+            <element signature="n#div#9;n#!!top" />
+            <element signature="n#div#11;n#!!top" />
+            <element signature="n#div#13;n#!!top" />
+            <element signature="n#div#2;n#div#13;n#!!top" />
+            <element signature="n#div#14;n#!!top" />
+            <element signature="n#div#15;n#!!top" />
+            <element signature="n#div#16;n#!!top" />
+            <element signature="n#div#17;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/formulario/formulario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/formulario/formulario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="121" column="52" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
+          <folding>
+            <element signature="e#16#196#0" />
+            <element signature="e#60#189#0" />
+            <element signature="e#220#1076#0" />
+            <element signature="e#390#1068#0" />
+            <element signature="e#1165#2231#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototipo3/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!block;n#transformacionPositivoNegativo#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#sumar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#ordenarEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#definirGrupos#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#regresar#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro1#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#verCuadro2#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#buscarVariable#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#getEstudiantes#0;n#EstadisticasComponent#0" />
+            <element signature="n#!!block;n#imprimir#0;n#EstadisticasComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

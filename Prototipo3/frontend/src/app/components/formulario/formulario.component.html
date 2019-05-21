@@ -1,0 +1,1084 @@
+<!--Cabecera-->
+<div class="row" *ngIf="mostrarCabecera">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="{{cabecera}}" style="height: auto;width: 100%">
+    </div>
+  </div>
+</div>
+<!--Datos iniciales-->
+<div class="row" *ngIf="mostrardatos">
+  <br><br>
+  <div class="col-2"></div>
+  <div class="col-3">
+    <img src="{{fotos}}" style="height: 100%;width: 100%">
+  </div>
+  <div class="col-4">
+    <h4>UNIDAD EDUCATIVA MUNICIPAL ANTONIO JOSÉ DE SUCRE</h4>
+    <h5>Estudiante: {{estServ.selecionarEstudiante.nombreEstudiante}}</h5>
+    <h5>Año Lectivo: {{estServ.selecionarEstudiante.anioLectivo}}</h5>
+    <h5>Fecha: {{estServ.selecionarEstudiante.fecha}}</h5>
+    <h5>Evaluador: {{estServ.selecionarEstudiante.nombreEvaluador}}</h5>
+    <h5>Áreas debilitadas: {{estServ.selecionarEstudiante.totalAreasDebilitadas}}</h5>
+
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4">
+        <button (click)="iniciar()" style="background: cornflowerblue ; height: 100% ; width: 100%">Revisión</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--Opciones de revision-->
+<div class="row" *ngIf="mostrarOpciones"><br><br><br></div>
+<div class="row" *ngIf=mostrarOpciones>
+  <div class="col-1"></div>
+  <div class="col-4">
+    <div class="row">
+      <button style="background: cornflowerblue" (click)="mostrarFormularioF()"><img src="{{cabeceraF}}"
+                                                                                     style="height: 100%;width: 100%">
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-8">
+        <img src="{{cabeceraF1}}" style="height: 100%;width: 100%">
+      </div>
+    </div>
+
+  </div>
+  <div class="col-1"></div>
+  <div class="col-4">
+    <div class="row">
+      <button (click)="mostrarRecomendacionesR()" style="background: cornflowerblue"><img src="{{cabeceraR}}"
+                                                                                          style="height: 100%;width: 100%">
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <img src="{{cabeceraR1}}" style="height: 110%;width: 110%">
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--formulario-->
+<div *ngIf="mostrarFormulario">
+  <div class="row">
+
+  </div>
+  <!-- >Cabecera<!-->
+  <div class="hoja" xmlns="http://www.w3.org/1999/html">
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-1 sa-centrar">
+        <br>
+        <img src={{imagenCabecera}} style="height: auto;width: 120%">
+      </div>
+      <div class="col-9 sa-centrar">
+        <h4>{{cabecera1}}</h4>
+        <br>
+        <h4>{{cabecera2}} {{estServ.selecionarEstudiante.anioLectivo}}</h4>
+        <br>
+        <h4>{{cabecera3}}</h4>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <!-- >Datos estudiante<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10 sa-borde">
+        <div class="row">
+          <div class="col-1">
+            <h5><b>{{datos[valor]}}</b></h5>
+          </div>
+          <div class="col-5">
+            <p>{{estServ.selecionarEstudiante.nombreEstudiante}}</p>
+          </div>
+          <div class="col-2">
+            <h5><b>{{datos[valor+1]}}</b></h5>
+          </div>
+          <div class="col-1">
+            <p>{{estServ.selecionarEstudiante.anioEGB}}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            <h5><b>{{datos[valor+2]}}</b></h5>
+          </div>
+          <div class="col-5">
+            <p>{{estServ.selecionarEstudiante.fecha}}</p>
+          </div>
+          <div class="col-2">
+            <h5><b>{{datos[valor+3]}}</b></h5>
+          </div>
+          <div class="col-1">
+            <p>{{estServ.selecionarEstudiante.paralelo}}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <h5><b>{{datos[valor+4]}}</b></h5>
+          </div>
+          <div class="col-5">
+            <p>{{estServ.selecionarEstudiante.nombreEvaluador}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <!-- >Area1<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[valor]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[valor]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>En su propio cuerpo: </b> {{estServ.selecionarEstudiante.area1a}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>En el espejo:</b> {{estServ.selecionarEstudiante.area1b}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>En otra persona:</b> {{estServ.selecionarEstudiante.area1c}}</p></div>
+
+    </div>
+
+
+    <!-- >Area2<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[1]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[1]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <p><b>Mano:</b></p>
+      </div>
+      <div class="col-2">
+        <p><b>Ojo:</b></p>
+      </div>
+      <div class="col-3">
+        <p><b>Oído:</b></p>
+      </div>
+      <div class="col-2">
+        <p><b>Pie:</b></p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <p>{{estServ.selecionarEstudiante.area2a}}</p>
+      </div>
+      <div class="col-2">
+        <p>{{estServ.selecionarEstudiante.area2b}}</p>
+      </div>
+      <div class="col-3">
+        <p>{{estServ.selecionarEstudiante.area2c}}</p>
+      </div>
+      <div class="col-2">
+        <p>{{estServ.selecionarEstudiante.area2d}}</p>
+      </div>
+
+    </div>
+
+    <!-- >Area3<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[2]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[2]}}</p></div>
+    </div>
+
+    <!-- >Area3T<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <h5>{{subtituloArea3[valor]}}</h5>
+      </div>
+      <div class="col-5">
+        <p><b>{{estServ.selecionarEstudiante.aera3TemporalTotal}}</b></p>
+      </div>
+      <div class="col-1"></div>
+
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <p><b>a.&nbsp;</b> {{estServ.selecionarEstudiante.area3Ta}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area3Tb}}</p>
+      </div>
+      <div class="col-3">
+        <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area3Tc}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area3Td}}</p>
+      </div>
+
+    </div>
+
+    <!-- >Area3E<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <h5>{{subtituloArea3[valor+1]}}</h5>
+      </div>
+      <div class="col-5">
+        <p><b>{{estServ.selecionarEstudiante.aera3EspacialTotal}}</b></p>
+      </div>
+      <div class="col-1"></div>
+
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <p><b>a.&nbsp;</b> {{estServ.selecionarEstudiante.area3Ea}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area3Eb}}</p>
+      </div>
+      <div class="col-3">
+        <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area3Ec}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area3Ed}}</p>
+      </div>
+
+    </div>
+
+    <!-- >Area4<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[3]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[3]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-3">
+        <p><b>Saltar:</b> &nbsp;{{estServ.selecionarEstudiante.area4a}}</p>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-3">
+        <p><b>Botear:</b> &nbsp;{{estServ.selecionarEstudiante.area4b}}</p>
+      </div>
+    </div>
+
+
+    <!-- >Area5<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[4]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[4]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a.</b> &nbsp; {{estServ.selecionarEstudiante.area5a}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>b.</b> &nbsp; {{estServ.selecionarEstudiante.area5b}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>c.</b> &nbsp; {{estServ.selecionarEstudiante.area5c}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>d.</b> &nbsp; {{estServ.selecionarEstudiante.area5d}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>e.</b> &nbsp; {{estServ.selecionarEstudiante.area5e}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f.</b> &nbsp; {{estServ.selecionarEstudiante.area5f}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>g.</b> &nbsp; {{estServ.selecionarEstudiante.area5g}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>h.</b> &nbsp; {{estServ.selecionarEstudiante.area5h}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>i.</b> &nbsp; {{estServ.selecionarEstudiante.area5i}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>j.</b> &nbsp; {{estServ.selecionarEstudiante.area5j}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>k.</b> &nbsp; {{estServ.selecionarEstudiante.area5k}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>l.</b> &nbsp; {{estServ.selecionarEstudiante.area5l}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>m.</b> &nbsp; {{estServ.selecionarEstudiante.area5m}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>n.</b> &nbsp; {{estServ.selecionarEstudiante.area5n}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>o.</b> &nbsp; {{estServ.selecionarEstudiante.area5o}}</p></div>
+    </div>
+
+
+    <!-- >Area6<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[5]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[5]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <p><b>a.</b> &nbsp;{{estServ.selecionarEstudiante.area6a}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area6b}}</p>
+      </div>
+      <div class="col-3">
+        <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area6c}}</p>
+      </div>
+      <div class="col-2">
+        <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area6d}}</p>
+      </div>
+
+    </div>
+
+
+    <!-- >Area7<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[6]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[6]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area7a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area7b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area7c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area7d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area7e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area7f}}</p></div>
+      <div class="col-2"><p><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area7g}}</p></div>
+      <div class="col-2"><p><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area7h}}</p></div>
+      <div class="col-2"><p><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area7i}}</p></div>
+      <div class="col-2"><p><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area7j}}</p></div>
+    </div>
+
+
+    <!-- >Area8<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[7]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[7]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area8a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area8b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area8c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area8d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area8e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area8f}}</p></div>
+      <div class="col-2"><p><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area8g}}</p></div>
+      <div class="col-2"><p><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area8h}}</p></div>
+      <div class="col-2"><p><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area8i}}</p></div>
+      <div class="col-2"><p><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area8j}}</p></div>
+    </div>
+
+    <!-- >Area9<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[8]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[8]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area9a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area9b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area9c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area9d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area9e}}</p></div>
+    </div>
+
+
+    <!-- >Area10<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[9]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[9]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area10a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area10b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area10c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area10d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area10e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-1"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area10f}}</p></div>
+    </div>
+
+    <!-- >Area11<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[10]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[10]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area11a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area11b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area11c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area11d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area11e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area11f}}</p></div>
+      <div class="col-2"><p><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area11g}}</p></div>
+      <div class="col-2"><p><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area11h}}</p></div>
+      <div class="col-2"><p><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area11i}}</p></div>
+      <div class="col-2"><p><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area11j}}</p></div>
+    </div>
+
+    <!-- >Area12<!-->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[11]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[11]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area12a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area12b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area12c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area12d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area12e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area12f}}</p></div>
+      <div class="col-2"><p><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area12g}}</p></div>
+
+    </div>
+
+    <!-- >Area13<!-->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[12]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[12]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>3 Tarjetas: </b> {{estServ.selecionarEstudiante.area13a}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>5 Tarjetas:</b> {{estServ.selecionarEstudiante.area13b}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>8 Tarjetas:</b> {{estServ.selecionarEstudiante.area13c}}</p></div>
+
+    </div>
+
+    <!-- >Area14<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[13]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[13]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area14a}}</p></div>
+      <div class="col-2"><p><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area14b}}</p></div>
+      <div class="col-2"><p><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area14c}}</p></div>
+      <div class="col-2"><p><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area14d}}</p></div>
+      <div class="col-2"><p><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area14e}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area14f}}</p></div>
+      <div class="col-2"><p><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area14g}}</p></div>
+      <div class="col-2"><p><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area14h}}</p></div>
+      <div class="col-2"><p><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area14i}}</p></div>
+      <div class="col-2"><p><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area14j}}</p></div>
+    </div>
+
+
+    <!-- >Area15<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[14]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[14]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>Dibujo 1: </b> {{estServ.selecionarEstudiante.area15a}}</p></div>
+      <div class="col-2"></div>
+      <div class="col-2"><p><b>Dibujo 2: </b> {{estServ.selecionarEstudiante.area15b}}</p></div>
+      <div class="col-1"></div>
+      <div class="col-2"><p><b>Dibujo 3: </b> {{estServ.selecionarEstudiante.area15c}}</p></div>
+
+    </div>
+
+    <!-- >Area16<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[15]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[15]}}</p></div>
+    </div>
+
+
+    <!-- >Area17<!-->
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h4>{{tituloAreas[16]}}</h4>
+      </div>
+      <div class="col-5"><p>{{resultadoAreas[16]}}</p></div>
+    </div>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-3">
+        <p><b>Recorte 1:&nbsp;</b> {{estServ.selecionarEstudiante.area17a}}</p>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-3">
+        <p><b>Recorte 2:&nbsp;</b> {{estServ.selecionarEstudiante.area17b}}</p>
+      </div>
+    </div>
+
+    <div class="row"><br></div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-1">
+        <div class="row">
+          <button mat-flat-button (click)="imprimir()"
+                  style="background-color: transparent ;width: 25% ; height: 200% "><img src="{{botonImprimir}}"
+                                                                                         style="height: 100%;width: 100%">
+          </button>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="row">
+          <button mat-flat-button (click)="mostrarRecomendacionesR()"
+                  style="background-color: transparent ;width: 100% ; height: 100% "> >Recomendaciones
+          </button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="row">
+          <button mat-flat-button [routerLink]="['/home']"
+                  style="background-color: transparent ;width: 100% ; height: 100% "> >Inicio
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--recomendaciones-->
+<div class="row" *ngIf="mostrarRecomendaciones"><br></div>
+<!-- >Cabecera<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row">
+
+  </div>
+  <div class="col-1"></div>
+  <div class="col-1 sa-centrar">
+    <br>
+    <img src={{imagenCabecera}} style="height: auto;width: 120%">
+  </div>
+  <div class="col-9 sa-centrar">
+    <h4>{{cabecera1}}</h4>
+    <br>
+    <h4>{{cabecera2}} {{estServ.selecionarEstudiante.anioLectivo}}</h4>
+    <br>
+    <h4>{{cabecera3}}</h4>
+  </div>
+  <div class="col-1"></div>
+</div>
+<!-- >Datos estudiante<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row"><br></div>
+  <div class="col-1"></div>
+  <div class="col-10 sa-borde">
+    <div class="row">
+      <div class="col-1">
+        <h5>{{datos[valor]}}</h5>
+      </div>
+      <div class="col-5">
+        <p>{{estServ.selecionarEstudiante.nombreEstudiante}}</p>
+      </div>
+      <div class="col-2">
+        <h5>{{datos[valor+1]}}</h5>
+      </div>
+      <div class="col-1">
+        <p>{{estServ.selecionarEstudiante.anioEGB}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1">
+        <h5>{{datos[valor+2]}}</h5>
+      </div>
+      <div class="col-5">
+        <p>{{estServ.selecionarEstudiante.fecha}}</p>
+      </div>
+      <div class="col-2">
+        <h5>{{datos[valor+3]}}</h5>
+      </div>
+      <div class="col-1">
+        <p>{{estServ.selecionarEstudiante.paralelo}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <h5>{{datos[valor+4]}}</h5>
+      </div>
+      <div class="col-5">
+        <p>{{estServ.selecionarEstudiante.nombreEvaluador}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+</div>
+<!-- >Area1<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor]">
+    <h4>{{tituloAreas[valor]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea1; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor]"></div>
+</div>
+<!-- >Area2<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+1]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+1]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+1]">
+    <h4>{{tituloAreas[valor+1]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+1]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+1]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+1]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea2; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+1]"></div>
+</div>
+<!-- >Area3<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+2]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>
+  <div class="col-10">
+    <h4>{{tituloAreas[valor+2]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+2]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea3; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>
+</div>
+
+<!-- >Area4<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+3]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+3]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+3]">
+    <h4>{{tituloAreas[valor+3]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+3]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+3]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+3]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea4; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+3]"></div>
+</div>
+
+<!-- >Area5<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+4]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+4]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+4]">
+    <h4>{{tituloAreas[valor+4]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+4]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+4]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+4]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea5; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+4]"></div>
+</div>
+
+<!-- >Area6<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+5]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+5]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+5]">
+    <h4>{{tituloAreas[valor+5]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+5]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+5]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+5]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea6; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+5]"></div>
+</div>
+
+<!-- >Area7<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+6]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+6]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+6]">
+    <h4>{{tituloAreas[valor+6]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+6]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+6]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+6]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea7; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+6]"></div>
+</div>
+
+<!-- >Area8<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+7]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+7]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+7]">
+    <h4>{{tituloAreas[valor+7]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+7]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+7]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+7]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea8; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+7]"></div>
+</div>
+
+<!-- >Area9<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+8]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+8]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+8]">
+    <h4>{{tituloAreas[valor+8]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+8]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+8]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+8]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea9; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+8]"></div>
+</div>
+
+<!-- >Area10<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+9]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+9]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+9]">
+    <h4>{{tituloAreas[valor+9]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+9]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+9]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+9]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea10; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+9]"></div>
+</div>
+
+<!-- >Area11<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+10]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+10]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+10]">
+    <h4>{{tituloAreas[valor+10]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+10]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+10]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+10]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea11; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+10]"></div>
+</div>
+
+<!-- >Area12<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+11]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+11]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+11]">
+    <h4>{{tituloAreas[valor+11]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+11]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+11]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+11]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea12; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+11]"></div>
+</div>
+
+<!-- >Area13<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+12]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+12]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+12]">
+    <h4>{{tituloAreas[valor+12]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+12]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+12]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+12]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea13; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+12]"></div>
+</div>
+
+<!-- >Area14<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+13]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+13]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+13]">
+    <h4>{{tituloAreas[valor+13]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+13]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+13]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+13]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea14; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+13]"></div>
+</div>
+
+<!-- >Area15<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+14]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+14]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+14]">
+    <h4>{{tituloAreas[valor+14]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+14]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+14]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+14]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea15; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+14]"></div>
+</div>
+
+<!-- >Area16<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+15]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+15]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+15]">
+    <h4>{{tituloAreas[valor+15]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+15]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+15]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+15]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea16; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+15]"></div>
+</div>
+
+<!-- >Area17<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row" *ngIf="!resultadoAreasR[valor+16]"><br></div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+16]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+16]">
+    <h4>{{tituloAreas[valor+16]}}</h4>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+16]"></div>
+</div>
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+16]"></div>
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+16]">
+    <ul>
+      <li *ngFor="let respuesta of sugerenciasArea17; " style="font-size:1.2vw;">
+        {{respuesta}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1" *ngIf="!resultadoAreasR[valor+16]"></div>
+</div>
+<!-- >Imprimir y Salir<!-->
+<div class="row" *ngIf="mostrarRecomendaciones">
+  <div class="row"><br><br></div>
+  <div class="col-1"></div>
+  <div class="col-1">
+    <div class="row">
+      <button mat-flat-button (click)="imprimir()" style="background-color: transparent ;width: 25% ; height: 200% ">
+        <img src="{{botonImprimir}}" style="height: 100%;width: 100%"></button>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="row">
+      <button mat-flat-button (click)="mostrarFormularioF()"
+              style="background-color: transparent ;width: 100% ; height: 100% "> >Revisar Formulario
+      </button>
+    </div>
+  </div>
+  <div class="col-1">
+    <div class="row">
+      <button mat-flat-button [routerLink]="['/home']"
+              style="background-color: transparent ;width: 100% ; height: 100% "> >Inicio
+      </button>
+    </div>
+  </div>
+</div>
