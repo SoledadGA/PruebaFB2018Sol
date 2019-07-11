@@ -29,8 +29,8 @@
 
 <div class="row" *ngIf="mostrarPreguntas"><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-4"><p></p> </div>
-  <div class="col-5"><img src="{{imagenes[valor]}}" style="height: 75% ; width: 75%" ></div>
+  <div class="col-5"><p></p> </div>
+  <div class="col-5"><img src="{{imagenes[valor]}}" style="height: 60% ; width: 60%" ></div>
 </div>
 
 <div class="row"*ngIf="mostrarPreguntas">
@@ -67,7 +67,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarRespuesta"><br></div>
+<div class="row" *ngIf="mostrarRespuesta"><br><br></div>
 <div class="row" *ngIf="mostrarRespuesta">
   <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>
@@ -76,7 +76,6 @@
     <h5>{{areaDebilitada}}</h5>
   </div>
 </div>
-<div class="row" *ngIf="mostrarRespuesta"><br></div>
 
 <div class="row" *ngIf="mostrarRespuesta">
   <div class="col-10"><p></p></div>

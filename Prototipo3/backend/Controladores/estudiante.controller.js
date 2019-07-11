@@ -9,6 +9,8 @@ estudianteCtrl.getEstudiantes = async (req, res) => {
 
 estudianteCtrl.createEstudiante = async (req, res) => {
     const estudiante = new Estudiante({
+        discapacidad :req.body.discapacidad,
+        observacion :req.body.observacion,
         tipoTest : req.body.tipoTest,
         nombreEstudiante: req.body.nombreEstudiante,
         anioEGB: req.body.anioEGB,
@@ -157,6 +159,8 @@ estudianteCtrl.getEstudiante= async(req, res) => {
 estudianteCtrl.editEstudiante = async (req, res) => {
     const{ id } = req.params;
     const estudiante= {
+        discapacidad :req.body.discapacidad,
+        observacion :req.body.observacion,
         tipoTest : req.body.tipoTest,
         nombreEstudiante: req.body.nombreEstudiante,
         anioEGB: req.body.anioEGB,
@@ -314,6 +318,14 @@ estudianteCtrl.estadisticasEstudiantes = async (req, res) => {
     const{ anioLectivo } = req.params;
     const estudiantesE =  await Estudiante.find({tipoTest
         ,paralelo,anioLectivo});
+    res.json(estudiantesE);
+};
+
+estudianteCtrl.estadisticasTipoTest = async (req, res) => {
+    const{ tipoTest } = req.params;
+    const{ anioLectivo } = req.params;
+    const estudiantesE =  await Estudiante.find({tipoTest
+        ,anioLectivo});
     res.json(estudiantesE);
 };
 
