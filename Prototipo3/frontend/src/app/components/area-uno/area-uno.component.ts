@@ -15,6 +15,7 @@ export class AreaUnoComponent implements OnInit {
   mostrarDatos = false;
   iniciarTs = true;
   identificadorPrueba = localStorage.getItem('tipoTest');
+  identificadorDiscapacidad = localStorage.getItem('discapacidad');
   any = [];
   numeroEjemplo = 0;
   valor = 0;
@@ -105,17 +106,32 @@ export class AreaUnoComponent implements OnInit {
   tipoPrueba = 0 ;
   Fechita  = '';
   id = '';
+  contadorDiscapacidad = 0;
+  mostrarCabecera = false;
 
   iniciarFecha(){
     this.Fechita = this.txtFecha;
   }
 
   tipoTest(){
+    console.log('el tipo de test es lala');
     if(this.identificadorPrueba == 'reTest'){
       this.tipoPrueba = 1 ;
     }
     if(this.identificadorPrueba == 'freeTest'){
       this.tipoPrueba = 2 ;
+    }
+  }
+
+  tipoDiscapacidad(){
+    console.log('entre a la funcion');
+    if(this.identificadorDiscapacidad == 'no'){
+      this.contadorDiscapacidad = 0 ;
+      console.log('no discapacidad');
+    }
+    if(this.identificadorDiscapacidad == 'si'){
+      this.contadorDiscapacidad = 1 ;
+      console.log('si discapacidad');
     }
   }
 
@@ -274,6 +290,7 @@ export class AreaUnoComponent implements OnInit {
 
   constructor(private estServ: EstudianteService) {
     this.tipoTest();
+    this.tipoDiscapacidad();
   }
 
   ngOnInit() {
@@ -301,6 +318,7 @@ export class AreaUnoComponent implements OnInit {
   comenzar(){
     this.mostrarDatos = false;
     this.mostrarEjemplo = true;
+    this.mostrarCabecera = true;
   }
 
 
@@ -313,6 +331,7 @@ export class AreaUnoComponent implements OnInit {
     this.estServ.selecionarEstudiante.area1a = this.resputaA;
     this.estServ.selecionarEstudiante.area1b = this.resputaB;
     this.estServ.selecionarEstudiante.area1c = this.resputaC;
+    this.estServ.selecionarEstudiante.discapacidad = this.contadorDiscapacidad;
 
     this.estServ.putEstudiante(this.estServ.selecionarEstudiante).subscribe(res => {
       console.log(this.estServ.selecionarEstudiante);

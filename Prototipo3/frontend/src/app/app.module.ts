@@ -42,7 +42,7 @@ import {FormularioComponent} from './components/formulario/formulario.component'
 import {EstadisticasComponent} from './components/estadisticas/estadisticas.component';
 import {RecomendacionesComponent} from './components/recomendaciones/recomendaciones.component';
 import { AreaCinco2Component } from './components/area-cinco2/area-cinco2.component';
-import {HijoComponent} from './components/hijo/hijo.component';
+import {HijoComponent} from './components/ayuda/hijo.component';
 import { AsignarParalelosComponent } from './components/asignar-paralelos/asignar-paralelos.component';
 import { CambioParaleloComponent } from './components/cambio-paralelo/cambio-paralelo.component';
 import { NominaParaleloComponent } from './components/nomina-paralelo/nomina-paralelo.component';
@@ -51,6 +51,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { EstadisticasFreeComponent } from './components/estadisticas-free/estadisticas-free.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { EstadisticasFreeComponent } from './components/estadisticas-free/estadi
     FormsModule,
     HttpClientModule,
     MatExpansionModule,
+    MatStepperModule,
 
 
   ],

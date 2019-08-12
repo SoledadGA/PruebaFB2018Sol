@@ -20,6 +20,7 @@ export class EstadisticasFreeComponent implements OnInit {
   cabecera4 = 'PRUEBA LIBRE';
   subtitulo = 'Lista estudiantes';
   tipoPrueba = 0;
+  color='colores1';
   any = [];
   tamanio = 0;
   listaEstudiantes: any[];
@@ -39,6 +40,14 @@ export class EstadisticasFreeComponent implements OnInit {
         //localStorage.setItem('identificador',this.estServ.selecionarEstudiante._id);
       });
 
+  }
+
+  verificarDiscapacidad(entrada: number){
+    if(entrada == 1 ){
+      this.color = 'colores';
+    }else{
+      this.color = 'colores1';
+    }
   }
 
   tipoTest() {
